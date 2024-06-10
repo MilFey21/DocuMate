@@ -1,0 +1,17 @@
+base:
+  seed: 42  # random seed
+  root_folder:   # folder in which to look for .dmate files
+  sleep: 5  # seconds to sleep before checking for new downloaded files
+  db_path: 
+
+vectorizer:
+  sentence_transformer_name: sentence-transformers/all-MiniLM-L6-v2
+  normalize_embeddings: True
+
+summarizer:
+  model_name: csebuetnlp/mT5_multilingual_XLSum  # utrobinmv/t5_summary_en_ru_zh_base_2048
+  max_length: 100  # max output text length
+
+knn:
+  n_neighbors: 3
+  use_nearest_centroids: True
